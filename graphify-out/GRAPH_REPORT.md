@@ -1,15 +1,16 @@
-# Graph Report - .  (2026-11-22)
+# Graph Report - ponytail  (2026-11-22)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 157 files · ~477,675 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1255 nodes · 1703 edges · 116 communities (106 shown, 10 thin omitted)
+- 1260 nodes · 1706 edges · 115 communities (103 shown, 12 thin omitted)
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 79 edges (avg confidence: 0.54)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3d771a9e`
+- Built from commit: `7dc11a91`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -27,7 +28,7 @@
 - package.json
 - band-import.test.js
 - What You Must Do When Invoked
-- ponytail-band-import.js
+- knowledge-sync.sh
 - Install
 - ponytail-config.js
 - ponytail-map.js
@@ -65,7 +66,7 @@
 - marketplace.json
 - README.md
 - Email Validation Function
-- sessionStats
+- Ponytail, lazy senior dev mode
 - ponytail-subagent.js
 - check-versions.js
 - activation-map.test.js
@@ -74,7 +75,7 @@
 - loc.test.js
 - Caveman vs Ponytail — 2026-06-12
 - Debounce Search Input
-- main
+- memory-ops.md
 - caveman-SKILL.md
 - Local model benchmark: llama3.2 via Ollama — 2026-06-15
 - 2026-06-16-correctness-gate-fix.md
@@ -107,7 +108,6 @@
 - Modal Dialog
 - Number Formatting
 - URL Parameters
-- Ponytail, lazy senior dev mode
 - Ponytail, lazy senior dev mode
 - SKILL.md
 - SKILL.md
@@ -150,7 +150,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (116 total, 10 thin omitted)
+## Communities (115 total, 12 thin omitted)
 
 ### Community 0 - "register.tsx"
 Cohesion: 0.08
@@ -165,8 +165,8 @@ Cohesion: 0.07
 Nodes (39): Any, build_injected_context(), _config_dir(), _default_mode(), _fallback_instructions(), _filter_skill_body_for_mode(), _handle_mode_command(), _make_skill_command_handler() (+31 more)
 
 ### Community 3 - "answer.py"
-Cohesion: 0.10
-Nodes (39): _cells(), _fixed_diff(), _gate_ok(), judge_reply(), main(), _pair_call(), pairwise(), Path (+31 more)
+Cohesion: 0.08
+Nodes (44): _cells(), _fixed_diff(), _gate_ok(), judge_reply(), main(), _pair_call(), pairwise(), Path (+36 more)
 
 ### Community 4 - "run.py"
 Cohesion: 0.11
@@ -208,16 +208,12 @@ Cohesion: 0.08
 Nodes (25): author, name, url, bugs, url, description, exports, ./plugin (+17 more)
 
 ### Community 11 - "band-import.test.js"
-Cohesion: 0.09
-Nodes (23): assert, at(), { CSV_HEADER, replyCost, sessionStats, csvRow, mergeRows, run }, early, env, fs, later, merged (+15 more)
+Cohesion: 0.06
+Nodes (52): csvRow(), field(), fs, { getClaudeDir }, HAIKU_55_LONG, human(), ledgerDir(), mergeRows() (+44 more)
 
 ### Community 12 - "What You Must Do When Invoked"
 Cohesion: 0.08
 Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
-
-### Community 13 - "ponytail-band-import.js"
-Cohesion: 0.14
-Nodes (21): csvRow(), field(), fs, { getClaudeDir }, HAIKU_55_LONG, ledgerDir(), mergeRows(), OPUS (+13 more)
 
 ### Community 14 - "Install"
 Cohesion: 0.09
@@ -367,9 +363,9 @@ Nodes (5): Debounce, Without Ponytail, 116 lines of code, Rate Limiting, Without
 Cohesion: 0.25
 Nodes (7): Comparison, Email Validation, Email Validation Function, More Robust Version (with additional checks), Using a Third-Party Library (Recommended for Production), With Ponytail, 3 lines of code, Without Ponytail, 75 lines of code
 
-### Community 51 - "sessionStats"
-Cohesion: 0.29
-Nodes (8): human(), modelId(), ms(), promptText(), replyCost(), sessionStats(), slim(), toolResult()
+### Community 51 - "Ponytail, lazy senior dev mode"
+Cohesion: 0.50
+Nodes (3): Before you write, Ponytail, lazy senior dev mode, The smallest complete change
 
 ### Community 52 - "ponytail-subagent.js"
 Cohesion: 0.29
@@ -402,10 +398,6 @@ Nodes (6): Caveman vs Ponytail — 2026-06-12, Ponytail v1 (before this benchmar
 ### Community 59 - "Debounce Search Input"
 Cohesion: 0.29
 Nodes (7): Advanced: Debounce with Cancel & Immediate Options, Basic Debounce Function, Debounce Search Input, Enhanced Version with Loading State, HTML Example, Key Benefits, With Ponytail, 10 lines of code
-
-### Community 60 - "main"
-Cohesion: 0.47
-Nodes (5): load(), main(), Cells from results.json plus answer-judge rows from answer.json, as one list of, sign_p(), metrics
 
 ### Community 61 - "caveman-SKILL.md"
 Cohesion: 0.33
@@ -535,10 +527,6 @@ Nodes (3): Number Formatting, With Ponytail, Without Ponytail
 Cohesion: 0.50
 Nodes (3): URL Parameters, With Ponytail, Without Ponytail
 
-### Community 93 - "Ponytail, lazy senior dev mode"
-Cohesion: 0.50
-Nodes (3): Before you write, Ponytail, lazy senior dev mode, The smallest complete change
-
 ### Community 94 - "Ponytail, lazy senior dev mode"
 Cohesion: 0.50
 Nodes (3): Before you write, Ponytail, lazy senior dev mode, The smallest complete change
@@ -556,24 +544,24 @@ Cohesion: 0.50
 Nodes (3): Before you write, Ponytail, lazy senior dev mode, The smallest complete change
 
 ## Knowledge Gaps
-- **714 isolated node(s):** `$schema`, `name`, `description`, `name`, `url` (+709 more)
+- **716 isolated node(s):** `Memory-first: codegraph / graphify / repo memories before grep`, `knowledge-sync.sh script`, `$schema`, `name`, `description` (+711 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `metrics` connect `main` to `band-import.test.js`?**
-  _High betweenness centrality (0.050) - this node is a cross-community bridge._
-- **Why does `pairwise()` connect `answer.py` to `main`?**
-  _High betweenness centrality (0.049) - this node is a cross-community bridge._
-- **Why does `sign_p()` connect `main` to `answer.py`?**
+- **Why does `metrics` connect `answer.py` to `band-import.test.js`?**
   _High betweenness centrality (0.048) - this node is a cross-community bridge._
-- **What connects `$schema`, `name`, `description` to the rest of the system?**
-  _747 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Memory-first: codegraph / graphify / repo memories before grep`, `knowledge-sync.sh script`, `$schema` to the rest of the system?**
+  _749 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `register.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.0758714969241285 - nodes in this community are weakly interconnected._
 - **Should `hooks.test.js` be split into smaller, more focused modules?**
   _Cohesion score 0.03076923076923077 - nodes in this community are weakly interconnected._
 - **Should `__init__.py` be split into smaller, more focused modules?**
   _Cohesion score 0.06976744186046512 - nodes in this community are weakly interconnected._
+- **Should `answer.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.07993197278911565 - nodes in this community are weakly interconnected._
+- **Should `run.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.1106612685560054 - nodes in this community are weakly interconnected._

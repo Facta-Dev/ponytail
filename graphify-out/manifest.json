@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.json": {
-    "mtime": 1795368534.8284638,
-    "ast_hash": "42c6267c370d3b09169b7ce31efce184",
+    "mtime": 1795371745.2831542,
+    "ast_hash": "44091d9ee85df822b39ee4c783e584a1",
     "semantic_hash": ""
   },
   ".codex-plugin/plugin.json": {
@@ -65,12 +65,12 @@
     "semantic_hash": ""
   },
   "__init__.py": {
-    "mtime": 1794269701.584521,
+    "mtime": 1795370047.5880551,
     "ast_hash": "1e4e6b4042aa85bd112de13d27a17500",
     "semantic_hash": ""
   },
   "benchmarks/agentic/answer.py": {
-    "mtime": 1794269701.667979,
+    "mtime": 1795370949.0824978,
     "ast_hash": "c7180718706fac9f11ea856a108570a3",
     "semantic_hash": ""
   },
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1795368534.8281286,
-    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "mtime": 1795370994.7899175,
+    "ast_hash": "9966d6dc412037aa92f0a6ef945d42f8",
     "semantic_hash": ""
   },
   "INSTALL.md": {
@@ -1082,6 +1082,21 @@
   "assets/waitlist-banner.png": {
     "mtime": 1794269701.666488,
     "ast_hash": "c3aed6040b694d4136ecb4bdf25ba2a3",
+    "semantic_hash": ""
+  },
+  ".claude/README.md": {
+    "mtime": 1795370994.7969182,
+    "ast_hash": "4fbaf09d5b6a4d5c365e8586336877db",
+    "semantic_hash": ""
+  },
+  ".claude/rules/memory-ops.md": {
+    "mtime": 1795372863.6056046,
+    "ast_hash": "18b2f668ad98bbaee7944dbb06501ab8",
+    "semantic_hash": ""
+  },
+  "scripts/hooks/knowledge-sync.sh": {
+    "mtime": 1795371324.424701,
+    "ast_hash": "9ca00e28188fb9c5572dc760186d988a",
     "semantic_hash": ""
   }
 }
