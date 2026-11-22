@@ -28,3 +28,8 @@ benchmarks/agentic/fixtures/
 # Claude Code writes these when it loads the band's hooks module from this folder
 .claude-plugin/types/
 /tsconfig.json
+CLAUDE.local.md
+.claude/install-state.json
+.claude/backups/
+.claude/logs/
+.codegraph/
